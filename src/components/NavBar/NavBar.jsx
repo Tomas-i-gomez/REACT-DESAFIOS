@@ -1,12 +1,12 @@
 import './NavBar.css'
-
+import Logo from './logoLikeYouBe.jpeg';
 
 
 // NAVBAR
 function NavBar() {
     return (
 <nav className="navbar navbar-expand-lg navbar-dark bg-black">
-    {/* <img src={Logo} className="nav-logo" alt="logo" /> */}
+    <div className="container-fluid">   <img src={Logo} className="nav-logo" alt="logo" width="50" height="50"/></div>
   <div className="container-fluid">
     <a className="navbar-brand" href="#"><strong>LikeYouBe</strong></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

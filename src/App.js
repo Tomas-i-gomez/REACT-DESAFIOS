@@ -1,7 +1,6 @@
 
 import './App.css';
 import NavBar from './components/NavBar/NavBar.jsx';
-import Logo from './components/NavBar/logoLikeYouBe.jpeg';
 
 function App() {
   return (
