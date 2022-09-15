@@ -1,5 +1,6 @@
 import './NavBar.css'
 import Logo from './logoLikeYouBe.jpeg';
+import CartWidget from './CartWidget';
 
 
 // NAVBAR
@@ -19,9 +20,11 @@ function NavBar() {
         <a className="nav-link active" href="#">Contacto</a>
       </div>
     </div>
+    <CartWidget />
   </div>
 </nav>
 );
 };
 
 export default NavBar;
+
