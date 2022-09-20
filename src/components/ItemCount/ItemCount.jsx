@@ -18,11 +18,16 @@ function ItemCount(props) {
         
     }
 
+    function onAddToCart() {
+        
+    }
+
   return (
     <div>
         <button onClick={handleAdd}> + </button>
         <span> {count} </span>
         <button onClick={handleRemove}> - </button>
+        <button> Agregar al Carrito </button>
     </div>
   )
 }
