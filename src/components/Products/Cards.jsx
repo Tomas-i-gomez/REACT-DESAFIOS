@@ -5,7 +5,7 @@ import './Cards.css'
 function Cards(props) {  
     let { price, title, img, detail } = props;
       return (
-        <div className="card">
+        <div className="card main">
           <div className="card-img">
             <img src={img} alt="card img"></img>
           </div>
