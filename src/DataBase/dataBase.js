@@ -37,9 +37,16 @@ const data = [
   }]
 
 
-export default function getItems() {
+export function getItems() {
     return new Promise ((resolve, reject) => {
         setTimeout(() => { resolve(data);},
         1500);
     })
     }   
+
+ export function getSingleItem() {
+      return new Promise ((resolve, reject) => {
+          setTimeout(() => { resolve(data[2]);},
+          1500);
+      })
+      }   

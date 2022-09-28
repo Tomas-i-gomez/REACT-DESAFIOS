@@ -27,19 +27,7 @@ let [data, setData] = useState([]);
     <div>
     <h1>{props.greeting}</h1>
     <div className="main container">
-    {/* <ItemList data= {data}/> */}
-      {
-        data.map((item) => {
-          return ( 
-          <Card
-          key={item.id}
-          title={item.title}
-          price={item.price}
-          detail={item.detail}
-          img={item.img}
-          />
-        )})
-      }
+    <ItemList item= {data}/>
     </div>
   </div>
   )
