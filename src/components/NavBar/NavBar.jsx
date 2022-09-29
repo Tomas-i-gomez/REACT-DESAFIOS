@@ -1,6 +1,7 @@
 import './NavBar.css'
 import Logo from './logoLikeYouBe.jpeg';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 
 // NAVBAR
@@ -15,9 +16,9 @@ function NavBar() {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <a className="nav-link active" aria-current="page" href="#">Home</a>
-        <a className="nav-link active" href="#">Proyectos</a>
-        <a className="nav-link active" href="#">Contacto</a>
+        <Link className="nav-link active" aria-current="page" to='/' >Home</Link>
+        <Link className="nav-link active" to="/sistema">Proyectos</Link>
+        <Link className="nav-link active" to="/sistema">Contacto</Link>
       </div>
     </div>
     <CartWidget />

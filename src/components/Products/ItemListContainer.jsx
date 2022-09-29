@@ -1,6 +1,6 @@
 import React, {useState , useEffect} from 'react'
 import Card from './Cards'
-import getItems from '../../DataBase/dataBase.js'
+import {getItems } from '../../DataBase/dataBase.js'
 import ItemList from './ItemList';
 
 // * ciclos de vida

@@ -1,16 +1,20 @@
 import React from 'react'
+import {getSingleItem} from '../../DataBase/dataBase';
+
+
+
 
 function ItemDetail(props) {
-    // let itemDetail = props.item
+    let itemDetail = props.item
   return (
-    <div item= {data}>
+    <div>
          {/* Card Detail */}
-         <h1>{data.title}</h1>
+         <h1>{itemDetail.title}</h1>
          <div className="card-img">
-            <img src={img} alt="card img"></img>
+            <img src={itemDetail.img} alt="card img"></img>
           </div>
-        <h3>{data.detail}</h3>
-//     </div>
+        <h3>{itemDetail.detail}</h3>
+     </div>
   )
 }
 
