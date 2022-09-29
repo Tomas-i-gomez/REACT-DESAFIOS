@@ -17,8 +17,8 @@ function NavBar() {
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
         <Link className="nav-link active" aria-current="page" to='/' >Home</Link>
-        <Link className="nav-link active" to="/sistema">Proyectos</Link>
-        <Link className="nav-link active" to="/sistema">Contacto</Link>
+        <Link className="nav-link active" to="/servicios">Proyectos</Link>
+        <Link className="nav-link active" to="/servicios">Contacto</Link>
       </div>
     </div>
     <CartWidget />

@@ -1,13 +1,16 @@
 import React , { useEffect,useState } from 'react'
 import{getSingleItem} from '../../DataBase/dataBase.js';
 import ItemDetail from './ItemDetail.jsx';
+import {useParams} from 'react-router-dom';
 
 function ItemDetailContainer(props) {
     let [data, setData] = useState({});
 
+    const {id}  =useParams();
+
   useEffect(
     () => {
-    getSingleItem().then((data) => {
+    getSingleItem(id).then((data) => {
       setData(data);
     });
   },

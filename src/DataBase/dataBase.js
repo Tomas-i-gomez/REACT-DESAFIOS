@@ -44,9 +44,15 @@ export function getItems() {
     })
     }   
 
- export function getSingleItem() {
+ export function getSingleItem(idItem) {
       return new Promise ((resolve, reject) => {
-          setTimeout(() => { resolve(data[2]);},
-          1500);
+        let itemFind = data.find((item)=> {
+          return item.id === parseInt(idItem) 
+        });
+
+        if (itemFind) resolve(itemFind);
+        else reject(new Error("Item no encontrado"));
+          // setTimeout(() => { resolve(data[2]);},
+          // 1500);
       })
       }   

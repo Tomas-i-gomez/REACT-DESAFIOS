@@ -16,7 +16,7 @@ function App() {
             <ItemListContainer greeting="E-desarrollos a medida, como tú eres "/>
           }>
           </Route>
-          <Route path='/sistema' element={
+          <Route path='/servicios/:id' element={
             <ItemDetailContainer/>
           }>
           </Route>

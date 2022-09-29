@@ -10,6 +10,7 @@ let itemList = props.item
         itemList.map((item) => {
           return <Card 
           key={item.id}
+          id={item.id}
           title={item.title}
           price={item.price}
           detail={item.detail}
