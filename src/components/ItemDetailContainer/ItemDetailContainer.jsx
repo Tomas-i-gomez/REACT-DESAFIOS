@@ -10,11 +10,11 @@ function ItemDetailContainer(props) {
 
   useEffect(
     () => {
-    getSingleItem(id).then((data) => {
-      setData(data);
-    });
+    getSingleItem(id).then((data) => 
+      setData(data)
+    );
   },
-  [],
+  [id],
   );
 
 

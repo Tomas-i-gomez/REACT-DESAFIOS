@@ -6,7 +6,7 @@ import './Cards.css'
 function Cards(props) {  
     let { price, title, img, detail, id} = props;
 
-    const urlDetail = `/servicios/${id}}`
+    const urlDetail = `/item/${id}`
       return (
         <div className="card main">
           <div className="card-img">

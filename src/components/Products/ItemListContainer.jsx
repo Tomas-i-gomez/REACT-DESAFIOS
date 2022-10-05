@@ -1,7 +1,8 @@
 import React, {useState , useEffect} from 'react'
 import Card from './Cards'
-import {getItems } from '../../DataBase/dataBase.js'
+import {getItems, getItemsByCategory } from '../../DataBase/dataBase.js'
 import ItemList from './ItemList';
+import {useParams } from 'react-router-dom';
 
 // * ciclos de vida
 // * promesas
@@ -13,14 +14,17 @@ import ItemList from './ItemList';
 function ItemListContainer(props) {
 let [data, setData] = useState([]);
 
-  useEffect(
-    () => {
-    getItems().then((data) => {
-      setData(data);
-    });
-  },
-  [],
-  );
+const {cat} = useParams();
+
+
+  useEffect(() => {
+    if (cat === undefined) {
+    getItems().then((data) => setData(data));
+  }
+  else {
+    getItemsByCategory(cat).then((data) => setData(data));
+  }
+},[cat],);
 
 
   return (

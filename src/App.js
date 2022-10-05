@@ -15,10 +15,9 @@ function App() {
           <Route path='/' element= {
             <ItemListContainer greeting="E-desarrollos a medida, como tú eres "/>
           }>
+          <Route path='/category/:cat' element= {ItemListContainer}> </Route>
           </Route>
-          <Route path='/servicios/:id' element={
-            <ItemDetailContainer/>
-          }>
+          <Route path='/item/:id' element={<ItemDetailContainer/>}>
           </Route>
         </Routes>
       </BrowserRouter>
