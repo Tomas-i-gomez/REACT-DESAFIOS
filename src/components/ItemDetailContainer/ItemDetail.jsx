@@ -6,6 +6,8 @@ import ItemCount from '../ItemCount/ItemCount';
 
 function ItemDetail(props) {
     let itemDetail = props.item
+
+
   return (
     <div>
          {/* Card Detail */}
@@ -14,7 +16,7 @@ function ItemDetail(props) {
             <img src={itemDetail.img} alt="card img"></img>
           </div>
         <h3>{itemDetail.detail}</h3>
-        <ItemCount initial={1} stock={itemDetail.stock}/>
+        <ItemCount initial={1} stock={5}/>
      </div>
   )
 }

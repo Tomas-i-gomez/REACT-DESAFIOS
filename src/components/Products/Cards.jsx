@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
 import './Cards.css'
+import Button from '../Buttons/Button';
 
 function Cards(props) {  
     let { price, title, img, detail, id} = props;
@@ -16,7 +17,7 @@ function Cards(props) {
             <h3>{title}</h3>
             <p>{detail}</p>
             <h4>{price}</h4>
-            <Link to={urlDetail}> Ver más </Link>
+            <Button><Link to={urlDetail}> Ver más </Link></Button>
 
           </div>
         </div>
