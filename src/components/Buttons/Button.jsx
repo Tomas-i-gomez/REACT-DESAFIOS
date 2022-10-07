@@ -4,11 +4,12 @@ import './Button.css'
 function Button(props) {
 let [color, setColor] = useState("blue")
 
-// function handleClick() {
-//     setColor("lightblue")}
+function handleClick() {
+    props.onClick();
+    setColor("lightblue")}
 
   return (
-    <button onClick={props.onClick}
+    <button onClick={handleClick}
     style={{backgroundColor: color}}
     className="button"
     >
