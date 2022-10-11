@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../Buttons/Button';
 
-function ItemCount(props, {onAddToCart}) {
+function ItemCount({props, onAddToCart}) {
     const [count, setCount] = React.useState(props.initial)
     const [stock, setStock] = React.useState(props.stock)
 
