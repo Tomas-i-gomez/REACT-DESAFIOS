@@ -1,4 +1,3 @@
-
 import './App.css';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import NavBar from './components/NavBar/NavBar.jsx';
@@ -10,16 +9,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <NavBar />
+        <NavBar />
         <Routes>
-          <Route path='/' element= {
-            <ItemListContainer greeting="E-desarrollos a medida, como tú eres "/>
-          }>
-          <Route path='/category/:cat' element= {ItemListContainer}> </Route>
-          </Route>
-          <Route path='/item/:id' element={<ItemDetailContainer/>}>
-          </Route>
-          <Route path='/cart'> </Route>
+          <Route path='/' element= {<ItemListContainer greeting="E-desarrollos a medida, como tú eres "/>} />
+          <Route path='/category/:cat' element={<ItemListContainer />} />
+          <Route path='/item/:id' element={<ItemDetailContainer/>} />
+          <Route path='/cart' />
         </Routes>
       </BrowserRouter>
     </div>

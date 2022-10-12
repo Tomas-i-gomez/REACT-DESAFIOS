@@ -47,20 +47,16 @@ export function getItems() {
         setTimeout(() => { resolve(data);},
         1500);
     })
-    }   
+    }
 
- export function getSingleItem(idItem) {
-      return new Promise ((resolve, reject) => {
-        let itemFind = data.find((item)=> {
-          return item.id === parseInt(idItem) 
-        });
-
-        if (itemFind) resolve(itemFind);
-        else reject(new Error("Item no encontrado"));
-          // setTimeout(() => { resolve(data[2]);},
-          // 1500);
-      })
-      }   
+export function getSingleItem(idItem) {
+  return new Promise((resolve, reject) => {
+    let itemFind = data.find((item) => {
+      return item.id === parseInt(idItem)
+    });
+    (itemFind) ? resolve(itemFind) : reject(new Error("Item no encontrado"));
+  })
+}
 
 
       export function getItemsByCategory(cat) {
