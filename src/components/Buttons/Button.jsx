@@ -4,8 +4,8 @@ import './Button.css'
 function Button(props) {
 let [color, setColor] = useState("blue")
 
-function handleClick({onClick}) {
-    onClick();
+function handleClick() {
+    props.onClick();
     setColor("lightblue")}
 
   return (
